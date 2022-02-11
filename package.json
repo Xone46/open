@@ -1,7 +1,7 @@
 {
-  "name": "anon",
+  "name": "gthconsult",
   "version": "1.0.0",
-  "description": "",
+  "description": "Web site Gth consult company",
   "main": "main.js",
   "scripts": {
     "server" : "nodemon main.js --ignore 'client/'",
@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/Xone46/anon.git"
   },
-  "author": "",
+  "author": "Achraf Lahcen (xone46)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Xone46/anon/issues"
