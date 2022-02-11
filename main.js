@@ -16,7 +16,7 @@ const { PORT, mongoUri} = require('./config');
 
 // connection 
 mongoose.Promise = global.Promise
-mongoose.connect(mongoUri, {useNewUrlParser : true, useUnifiedTopology : true})
+mongoose.connect('mongodb+srv://consult:achraf1000@cluster0.wkroh.mongodb.net/gh?retryWrites=true&w=majority', {useNewUrlParser : true, useUnifiedTopology : true})
 .then(()=> {
     console.log('Database connected');
 })
