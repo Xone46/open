@@ -1,6 +1,5 @@
 import axios from 'axios'
 
-const HOST = "http://localhost:3000";
 
 class ClientService {
 
@@ -9,7 +8,7 @@ class ClientService {
     static getClients() {
         return new Promise((resolve, reject) => {
 
-            axios.get(HOST+"/clients/show")
+            axios.get(`${process.env.VUE_APP_API_BASE_URL}/clients/show`)
                 .then(response => {
                     resolve(response.data);
                 })

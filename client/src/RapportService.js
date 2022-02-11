@@ -1,7 +1,5 @@
 import axios from 'axios'
 
-
-
 class RapportService {
     // Created Rapport
     static insertRapport(file, clientId) {
@@ -9,7 +7,7 @@ class RapportService {
             var formData = new FormData();
             formData.append('file', file);
             formData.append('clientId', clientId);
-            axios.post("api/files/upload", formData, {
+            axios.post(`${process.env.VUE_APP_API_BASE_URL}/files/upload`, formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }})
@@ -32,7 +30,7 @@ class RapportService {
             var formData = new FormData();
             formData.append('file', file);
             formData.append('clientId', clientId);
-            axios.post("api/rapports/files/update", formData, {
+            axios.post(`${process.env.VUE_APP_API_BASE_URL}/rapports/files/update`, formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }})
